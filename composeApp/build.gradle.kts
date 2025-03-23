@@ -36,6 +36,8 @@ kotlin {
     sourceSets {
 
         commonMain.dependencies {
+
+
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
@@ -47,8 +49,12 @@ kotlin {
             implementation(libs.androidx.paging.common)
             implementation(libs.androidx.room.runtime)
             implementation(libs.sqlite.bundled)
+
+
         }
         androidMain.dependencies {
+
+
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
 

@@ -8,6 +8,7 @@ compose = "1.7.8"
 compose-plugin = "1.7.0"
 kotlin = "2.1.0"
 
+
 #Room
 androidx-room = "2.7.0-rc02"
 ksp = "2.1.0-1.0.29"
@@ -16,7 +17,46 @@ pagingComposeAndroid = "3.3.6"
 androidx-paging = "3.3.6"
 
 
+# Additional libraries updated from the new versions you provided
+geoCompose = "0.6.0"
+kotlinxSerializationJson = "1.6.1"
+kamel-image = "0.9.3"
+ktor = "2.3.10"
+material3 = "1.2.1"
+permissions = "0.17.0"
+fragmentKtx = "1.6.2"
+ktxDateTime = "0.4.1"
+mokoMedia = "0.11.0"
+mediaFilePicker = "3.1.0"
+sqlDelight = "2.0.2"
+koin = "3.4.3"
+koin-compose = "1.0.4"
+
+
 [libraries]
+
+geo-compose = { module = "dev.icerock.moko:geo-compose", version.ref = "geoCompose" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-auth= {module ="io.ktor:ktor-client-auth", version.ref = "ktor"}
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-serialization = {module = "io.ktor:ktor-serialization-kotlinx-json", version.ref= "ktor"}
+ktor-client-content-negotiation = {module = "io.ktor:ktor-client-content-negotiation", version.ref= "ktor"}
+
+ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+
+ktx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "ktxDateTime" }
+
+kamel-image = { module = "media.kamel:kamel-image", version.ref = "kamel-image" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
+moko-permissions-compose = { module = "dev.icerock.moko:permissions-compose", version.ref = "permissions" }
+moko-permissions = { module = "dev.icerock.moko:permissions", version.ref = "permissions" }
+moko-media = { group = "dev.icerock.moko", name = "media", version.ref = "mokoMedia" }
+moko-media-compose = { group = "dev.icerock.moko", name = "media-compose", version.ref = "mokoMedia" }
+
+
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
@@ -38,3 +78,6 @@ kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref =
 #Room
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 room = { id = "androidx.room", version.ref = "androidx-room" }
+
+
+
