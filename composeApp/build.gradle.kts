@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
 
+    id("org.jetbrains.kotlin.plugin.compose") version "2.1.20"
+
     // Room
     alias(libs.plugins.ksp)
     alias(libs.plugins.room)
